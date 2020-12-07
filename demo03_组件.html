@@ -62,16 +62,16 @@
          * */
         tooltip: {
           trigger: "item",
-          trigger: "axis",
-          trigger: "none",
-          show: true,
+          //   trigger: "axis",
+          //   trigger: "none",
+          //   show: true,
         },
 
         /*绘图区 grid
          *   left right bottom top 绘图区在容器内的边距
          * */
         grid: {
-          top: 120,
+          top: 150,
         },
 
         /*图例 legend
@@ -126,28 +126,28 @@
          * */
         yAxis: {
           name: "人数",
-          // splitNumber:10
-          // interval:10,
-          // minInterval: 30
-          // maxInterval:10
+          splitNumber: 10,
+          //   interval: 10,
+          //   minInterval: 30,
+          //   maxInterval: 10,
         },
 
         /*系列列表 series
-         *   列表类型 type
-         *   系列名 name ：用于提示tooltip，图例legend 筛选，数据更新
-         *   数据 data []
-         *   标记点 markPoint {}
-         *       data [] 标记的数据数组
-         *           {type:'max'} 最大值
-         *           {type:'min'} 最小值
-         *           {value:'值',coord:[x,y]} 坐标位
-         *   标记线 markLine
-         *       data[] 标记数据
-         *           name 名称
-         *           type 类型 'average', 'min', 'max'
-         *           coord 点位
-         *           ...
-         * */
+            列表类型 type
+            系列名 name ：用于提示tooltip，图例legend 筛选，数据更新
+            数据 data []
+            标记点 markPoint {}
+                data [] 标记的数据数组
+                    {type:'max'} 最大值
+                    {type:'min'} 最小值
+                    {value:'值',coord:[x,y]} 坐标位
+            标记线 markLine
+                data[] 标记数据
+                    name 名称
+                    type 类型 'average', 'min', 'max'
+                    coord 点位
+                    ...
+        */
         series: [
           {
             name: "观看人数",
@@ -157,7 +157,7 @@
               data: [
                 { type: "max" },
                 { type: "min" },
-                { coord: [0, 300], value: "大家晚上好" },
+                { coord: [0, 300], value: "晚上好" },
               ],
             },
           },
